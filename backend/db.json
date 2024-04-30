@@ -1,0 +1,53 @@
+{
+  "colaboradores": [
+    {
+      "id": 1,
+      "nome": "João Batista",
+      "cargo": "Auxiliar",
+      "departamento": "Administrativo",
+      "possuiVale": true
+    },
+    {
+      "id": 2,
+      "nome": "Mario Silva",
+      "cargo": "Programador",
+      "departamento": "Tecnologia",
+      "possuiVale": true
+    },
+    {
+      "id": 3,
+      "nome": "Maria Fagundes",
+      "cargo": "Designer Gráfico",
+      "departamento": "Marketing",
+      "possuiVale": false
+    },
+    {
+      "id": 4,
+      "nome": "Joana Oliveira",
+      "cargo": "Auxiliar",
+      "departamento": "Administrativo",
+      "possuiVale": true
+    },
+    {
+      "id": 5,
+      "nome": "Sofia Mendes",
+      "cargo": "Programador",
+      "departamento": "Tecnologia",
+      "possuiVale": true
+    },
+    {
+      "id": 6,
+      "nome": "Robert dos Santos",
+      "cargo": "Designer Gráfico",
+      "departamento": "Marketing",
+      "possuiVale": false
+    },
+    {
+      "id": 7,
+      "nome": "Rosa Lourenço",
+      "cargo": "Administrador",
+      "departamento": "Financeiro",
+      "possuiVale": true
+    }
+  ]
+}

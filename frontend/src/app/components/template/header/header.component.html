@@ -1,0 +1,32 @@
+<mat-toolbar class="header">
+    <span>
+        <a routerLink="/">
+            <img class="logo" src="assets/img/logo-vale-transporte2.png" alt="logo">
+        </a>
+    </span>
+    <span class="title-group">
+        <a routerLink="{{ routeUrl }}">
+            <i class="material-icons">
+                {{ icon }}
+            </i>
+            {{ title }}
+        </a>
+    </span>
+    <div *ngIf="title !== 'Login'" class="nav-list">
+        <a routerLink="/" class="list-item" matTooltip="Sair">
+            <i class="material-icons">
+                logout
+            </i>
+        </a>
+        <a routerLink="/colaboradores" class="list-item" matTooltip="Colaboradores">
+            <i class="material-icons">
+                person
+            </i>
+        </a>
+        <a routerLink="/home" class="list-item" matTooltip="Início">
+            <i class="material-icons">
+                home
+            </i>
+        </a>
+    </div>
+</mat-toolbar>

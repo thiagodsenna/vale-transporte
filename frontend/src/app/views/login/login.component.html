@@ -1,0 +1,36 @@
+<div class="login-conteiner">
+    <mat-card class="login">
+        <mat-card-header class="titulo">
+            <mat-card-title-group>
+                <mat-card-title>Login</mat-card-title>
+            </mat-card-title-group>
+        </mat-card-header>
+        
+        <mat-card-content>
+            <form>
+                <mat-form-field>
+                    <mat-icon matPrefix>
+                        <i class="material-icons login-icon">
+                            person
+                        </i>
+                    </mat-icon>
+                    <mat-label>Usuário</mat-label> 
+                    <input matInput [(ngModel)]="usuario" name="usuario">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-icon matPrefix>
+                        <i class="material-icons login-icon">
+                            lock
+                        </i>
+                    </mat-icon>
+                    <mat-label>Senha</mat-label> 
+                    <input matInput [(ngModel)]="senha" name="senha" type="password">
+                </mat-form-field>
+            </form>
+
+            <button mat-raised-button color="primary" (click)="login()">
+                Acessar
+            </button>
+        </mat-card-content>
+    </mat-card>
+</div>

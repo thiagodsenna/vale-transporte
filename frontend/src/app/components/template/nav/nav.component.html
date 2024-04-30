@@ -1,0 +1,33 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav *ngIf="rotaTitle !== 'Login'" class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <div class="usuario-resumo">
+            <img class="usuario" src="assets/img/usuario.png" alt="usuario">
+            <p class="nome">Thiago Senna</p>
+            <p class="email">thiagodsenna@gmail.com</p>
+        </div>
+
+        <div class="nav-list">
+            <a routerLink="/home" class="list-item" [ngClass]="{'menu-ativo': rotaTitle === 'Início'}">
+                <i class="material-icons">
+                    home
+                </i>
+                Início
+            </a>
+            <a routerLink="/colaboradores" class="list-item" [ngClass]="{'menu-ativo': rotaTitle === 'Colaboradores'}">
+                <i class="material-icons">
+                    person
+                </i>
+                Colaboradores
+            </a>
+            <a routerLink="/" class="list-item" [ngClass]="{'menu-ativo': rotaTitle === 'Login'}">
+                <i class="material-icons">
+                    logout
+                </i>
+                Sair
+            </a>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="content" [ngClass]="{'sem-padding': rotaTitle === 'Login'}">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
